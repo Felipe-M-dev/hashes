@@ -4,5 +4,5 @@ def filter(hash, k)
     hash.select { |m, s| s > k }
 end
 
-## puts filter(45000)
+## puts filter(ventas, 45000)
 puts filter(ventas, gets.chomp.to_i)
