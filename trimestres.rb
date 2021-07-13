@@ -4,7 +4,7 @@ def main
 end
 
 def process(hash)
-    q = hash.values.each_slice(3).to_a
+    q = hash.values.each_slice(hash.length/4).to_a
     {"Q1" =>q[0].inject(0){ |sum,x| sum + x }, "Q2" =>q[1].inject(0){ |sum,x| sum + x }, "Q3" =>q[2].inject(0){ |sum,x| sum + x }, "Q4" =>q[3].inject(0){ |sum,x| sum + x }}
 end
 
